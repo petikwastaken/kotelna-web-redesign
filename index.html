@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>Naše Kotelna</title>
+</head>
+<body>
+    <h1>Kotelna teploty:</h1>
+    <h2 class="accum">Accumulátor: 70.00%</h2>
+    <h2 class="kotel">Kotel: 90°C</h2>
+    <h1>zdebudegraf</h1>
+    <h2>Senzory</h3>
+    <h3>T1: 87.00°C
+        T2: 85.00°C
+        T3: 80.00°C
+        T4: 75.00°C
+        T5: 50.00°C
+    </h3>
+    <br>
+    <h3>
+        T6: 90°C Kotel
+        T7: 53°C Radiatory
+        T8: 28°C Prostor
+        T9: 42°C Zpět
+        T10: 8°C Venku
+    </h3>
+    <h3>Server status:</h3>
+    <h4>Server time: 12:34:56 1.1.2023</h4>
+    <h4>Network strength: -90</h4>
+    <h1 id="counter"></h1>
+    <img src="javascript:location.href='javascript:start();';">
+</body>
+<style>
+    body{
+        background-color: #0D1117;
+        color: #C9D1D9;
+        text-align: center;
+    }
+</style>
+
+
+<script>
+    window.onload = function(){
+
+    var wait = (ms) => {
+    const start = Date.now();
+    let now = start;
+    while (now - start < ms) {
+      now = Date.now();
+    }
+}
+var i = 5
+while (1 == 1) {
+    wait(999);
+    var i = i - 1;
+    document.getElementById("counter").innerHTML = i;
+}
+};
+</script>
